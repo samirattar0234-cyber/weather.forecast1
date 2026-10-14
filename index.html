@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atmos Weather</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="weather-app">
+
+    <header class="topbar">
+      <a class="logo" href="#">atmos<span>.</span></a>
+      <div class="location">
+        <span class="location-icon">⌖</span>
+        <span>Karachi, Pakistan</span>
+      </div>
+      <button class="menu-btn" aria-label="Menu">☰</button>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">THURSDAY, OCTOBER 15</p>
+        <h1>Good afternoon.</h1>
+        <p class="description">A beautiful day to get outside.</p>
+
+        <div class="temperature">
+          <span class="degrees">29°</span>
+          <div class="weather-description">
+            <strong>Sunny</strong>
+            <span>Feels like 31°</span>
+          </div>
+        </div>
+
+        <div class="weather-details">
+          <div>
+            <span class="detail-icon">↗</span>
+            <span class="detail-label">HIGH / LOW</span>
+            <strong>32° / 25°</strong>
+          </div>
+          <div>
+            <span class="detail-icon">♧</span>
+            <span class="detail-label">WIND</span>
+            <strong>12 km/h</strong>
+          </div>
+          <div>
+            <span class="detail-icon">◉</span>
+            <span class="detail-label">HUMIDITY</span>
+            <strong>48%</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="sun-art" aria-label="Illustration of the sun">
+        <div class="sun-glow"></div>
+        <div class="sun"></div>
+        <div class="cloud cloud-one"></div>
+        <div class="cloud cloud-two"></div>
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+      </div>
+    </section>
+
+    <section class="forecast-section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR DAY</p>
+          <h2>Hourly forecast</h2>
+        </div>
+        <a href="#weekly">Next 24 hours ↗</a>
+      </div>
+
+      <div class="hourly-list">
+        <article class="hour-card">
+          <span>NOW</span>
+          <div class="mini-sun">☀</div>
+          <strong>29°</strong>
+        </article>
+        <article class="hour-card">
+          <span>2 PM</span>
+          <div class="mini-sun">☀</div>
+          <strong>30°</strong>
+        </article>
+        <article class="hour-card">
+          <span>3 PM</span>
+          <div class="mini-cloud">☁</div>
+          <strong>31°</strong>
+        </article>
+        <article class="hour-card">
+          <span>4 PM</span>
+          <div class="mini-sun">☀</div>
+          <strong>30°</strong>
+        </article>
+        <article class="hour-card">
+          <span>5 PM</span>
+          <div class="mini-cloud">☁</div>
+          <strong>28°</strong>
+        </article>
+        <article class="hour-card">
+          <span>6 PM</span>
+          <div class="mini-moon">☾</div>
+          <strong>27°</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="bottom-grid" id="weekly">
+      <div class="panel weekly-panel">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE WEEK AHEAD</p>
+            <h2>7-day forecast</h2>
+          </div>
+        </div>
+
+        <div class="week-row">
+          <span>Fri</span><span class="week-icon">☀</span>
+          <span class="week-condition">Sunny</span><span class="week-temp">31° <small>25°</small></span>
+        </div>
+        <div class="week-row">
+          <span>Sat</span><span class="week-icon">☁</span>
+          <span class="week-condition">Cloudy</span><span class="week-temp">29° <small>24°</small></span>
+        </div>
+        <div class="week-row">
+          <span>Sun</span><span class="week-icon">☀</span>
+          <span class="week-condition">Sunny</span><span class="week-temp">32° <small>26°</small></span>
+        </div>
+        <div class="week-row">
+          <span>Mon</span><span class="week-icon">☁</span>
+          <span class="week-condition">Partly cloudy</span><span class="week-temp">30° <small>25°</small></span>
+        </div>
+        <div class="week-row">
+          <span>Tue</span><span class="week-icon">☀</span>
+          <span class="week-condition">Sunny</span><span class="week-temp">33° <small>26°</small></span>
+        </div>
+      </div>
+
+      <div class="right-panels">
+        <div class="panel air-panel">
+          <p class="eyebrow">AIR QUALITY</p>
+          <div class="air-top">
+            <div>
+              <h2>42 <span>/ 100</span></h2>
+              <p class="air-status">Good air quality</p>
+            </div>
+            <div class="air-circle">✓</div>
+          </div>
+          <div class="air-bar"><span></span></div>
+          <p class="muted">It's a great day for outdoor activities.</p>
+        </div>
+
+        <div class="panel tip-panel">
+          <div class="tip-icon">✦</div>
+          <div>
+            <p class="eyebrow">DAILY TIP</p>
+            <h3>Stay hydrated</h3>
+            <p class="muted">The afternoon is warm. Remember to drink water.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>atmos<span class="footer-dot">.</span></span>
+      <span>Weather, made simple.</span>
+      <span>Sample weather data</span>
+    </footer>
+
+  </main>
+</body>
+</html>
